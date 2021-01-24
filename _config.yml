@@ -64,3 +64,5 @@ rss-description: This website is a virtual proof that I'm awesome
 url-pretty: "opustm.herokuapp.com"
 
 description: User Documentation
+
+theme: jekyll-theme-cayman
