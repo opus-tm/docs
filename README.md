@@ -5,7 +5,7 @@
 
 Opus is a workforce management application for small teams.
 
-Want to contribute to Opus? Check out [how to contribute](./CONTRIBUTING).
+Want to contribute to Opus? Check out [how to contribute](./CONTRIBUTING.md).
 
 ## Overview
 We designed Opus as a lightweight team management platform to provide small teams with the facilites to collaborate and connect with their fellow teammates. While there's no limit to how many people can be added to an Opus team, we feel that our services are best fitted to teams of less than 75 people.
