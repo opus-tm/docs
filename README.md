@@ -1,13 +1,11 @@
 
 # Introduction 
 
+![OpusLogo](./images/logo64.png)
+
 Opus is a workforce management application for small teams.
 
-## Notes
-
-Any updates to this document and any linked documents will automatically be deployed to the [Documentation website](https://opus-tm.github.io/docs/). 
-
-Updates coming soon...
+Want to contribute to Opus? Check out [how to contribute](./CONTRIBUTING).
 
 ## Overview
 We designed Opus as a lightweight team management platform to provide small teams with the facilites to collaborate and connect with their fellow teammates. While there's no limit to how many people can be added to an Opus team, we feel that our services are best fitted to teams of less than 75 people.
@@ -42,3 +40,5 @@ Many messaging platforms already exist, but it would be a bonus to include a cha
 While we had planned to include this in the MVP, time constraints and backend configurations required us to move this feature to after MVP. We plan to implement this on the backend with three lists for each team, each containing the ids of the corresponding users: 'owners', 'managers', and 'users'. Owners have full access to the site's features including editing a team name, promoting members up to owner, and deleting the team that they are the owner of. Managers can create team-wide events and announcements, remove and add users to the team, create new subgroups, and promote members up to manager. Users will have the ability to leave teams, create events between themselves and other users, and view announcements and events of their corresponding team. Each permission level inherits the permissions of the levels below it. These lists can then be fetched from the API to determine what level of access the current user is allowed on the site.
 
 ### To Do List
+
+
