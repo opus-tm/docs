@@ -5,6 +5,11 @@
 
 Opus is a workforce management application for small teams.
 
+Here are our:
+* [Privacy Policy](./legal/privacy.md)
+* [Terms and Conditions](/legal/tac.md)
+* [License](./legal/LICENSE.md)
+
 Want to contribute to Opus? Check out [how to contribute](./CONTRIBUTING.md).
 
 ## Overview
