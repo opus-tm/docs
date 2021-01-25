@@ -27,13 +27,16 @@ Widgets are available for each of the tools that Opus provides. Each widget prov
 Below is a list of tools and features that we've implemented for the Minimum Viable Product presentation on Tuesday, January 26th. Announcements, Calendar, and Contacts pages all display their corresponding data in a table view, using the NPM package 'react-bootstrap-table-next'. This allows each of them to be sorted by any column the user chooses.
 
 ### Announcements
-Users within a team can create an announcement that all other users in that team can view. Each announcements is displayed in a table view with its priority (High, Medium, Low), the user that created it, the team it was created for, the expiration date of the announcement, its associated event (if it has one), and the announcement message. Announcements can be filtered by team and priority using the corresponding dropdown menu or by accessing the announcements route paired with the desired team: '/announcements/{teamName}'.
+Users within a team can create an announcement that all other users in that team can view. Each announcements is displayed in a table view with its priority (High, Medium, Low), the user that created it, the team it was created for, the expiration date of the announcement, its associated event (if it has one), and the announcement message. Announcements can be filtered by team and priority using the corresponding dropdown menu or by accessing the announcements route paired with the desired team: '/announcements/{teamName}'. Announcements have an expiration date, and will be deleted automatically after that date has passed.
 
 ### Calendar
+Users can create events that are associated with their team, which are then visibile to all members of that team. Alternatively, users can create events that are between them and any of their contacts, without being linked to a specific team. In this case, the event is only visible to people who were invited. The events table can be filtered by team and can also display all events without a corresponding team.
 
 ### Contacts
+Contacts simply displays all of the users that the current user shares at least one team with. Like all of the tables, it is sortable, and the username of each row in the contact table links to the profile page of that specific person.
 
 ### Teams and Subgroups
+Users can create new teams by navigating to their teams page and clicking 'Create Team'. This will prompt the user for a name, and will create the new team and add it to the user's teams once they submit. On each team's specific page, users can invite new members to the team or remove members who are already in the team, and the 'Members' widget reflects these changes. Additionally, users can create and delete subgroups within the team, which are displayed in the 'Groups' widget. Currently, no functionality exists for these subgroups, but we have plans to create unique pages and permissions for each of them in a manner analagous to the teams.
 
 ## Proposed Future Features and Enhancements
 While the MVP presentation date limited how much we could feasibly do on this project, we have taken the time to brainstorm ideas for future enhancements to Opus, which are listed below.
@@ -45,5 +48,4 @@ Many messaging platforms already exist, but it would be a bonus to include a cha
 While we had planned to include this in the MVP, time constraints and backend configurations required us to move this feature to after MVP. We plan to implement this on the backend with three lists for each team, each containing the ids of the corresponding users: 'owners', 'managers', and 'users'. Owners have full access to the site's features including editing a team name, promoting members up to owner, and deleting the team that they are the owner of. Managers can create team-wide events and announcements, remove and add users to the team, create new subgroups, and promote members up to manager. Users will have the ability to leave teams, create events between themselves and other users, and view announcements and events of their corresponding team. Each permission level inherits the permissions of the levels below it. These lists can then be fetched from the API to determine what level of access the current user is allowed on the site.
 
 ### To Do List
-
-
+Users would be able to add or remove 'To-Do' items that can be assigned to other members of their teams, the entire team, or themselves. Users could then view their assigned to-dos or team to-dos in a manner similar to Announcements, and then could mark items as 'To-Do', 'In Progress', or 'Completed', and so on. 
